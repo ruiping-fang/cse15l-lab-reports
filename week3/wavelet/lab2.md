@@ -46,34 +46,40 @@ class StringSever {
 
 ```
 
+screenshot 1:
+
 ![part1_q2](part1_q2.png)
+
+screenshot 2:
+
 ![part1_q3](part1_q3.png)
 
-    q1 and q2
+For each of the two screenshots, describe:
 
-- StringSever's `main` function were called when server start, agrument is port `4000`
-- When the first request `/add-message?s=Hello` come, it called `handleRequest` with the agrument of `http://localhost:4000/add-message?s=hello`
+- Which methods in your code are called?
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-- When the second request `/add-message?s=how are you` come, it called `handleRequest` with the agrument of `http://localhost:4000/add-message?s=how%20are%20you`
+  q1 & q2:
 
-  q3
+  - For both requests, StringSever's `main` function were called when server start, agrument is port `4000`
+  - When the first request `/add-message?s=Hello` came, it called `handleRequest` method with the agrument of `http://localhost:4000/add-message?s=hello`, agrument type is `URI`.
+  - When the second request `/add-message?s=how are you` come, it called `handleRequest` with the agrument of `http://localhost:4000/add-message?s=how%20are%20you` agrument type is `URI`.
 
-- The first request come `num = 1`, `"1. hello"` were added to `message`
-- The second request come `num = 2`, `"1. hello\n2. how are you"` were added to `message`
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  - The first request come `num = 1`, `"1. hello"` were added to `message`
+  - The second request come `num = 2`, `"1. hello\n2. how are you"` were added to `message`
 
 ## Part 2
 
-![part2_q1](part2_q1_sshkey.png)
+- The path to the private key for SSH key for logging into ieng6 is `/Users/ruiping.fang/.ssh/id_rsa`
 
-- The path to the private key for SSH key for logging into ieng6
+- The path to the public key for SSH key for logging into ieng6 `/Users/ruiping.fang/.ssh/id_rsa.pub`
 
-![part2_q2](part2_q2_publickey.png)
-
-- The path to the public key for SSH key for logging into ieng6
-
-![part2_q3](part2_q3.png)
+  ![part2_q1](part2_q1_sshkey.png)
 
 - A terminal interaction where I log into ieng6 with my course-specific account without being asked for a password.
+
+  ![part2_q3](part2_q3.png)
 
 ## Part 3
 
