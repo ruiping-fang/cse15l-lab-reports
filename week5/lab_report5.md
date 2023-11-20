@@ -701,3 +701,5 @@ And the four options I chose were:
 
 
     ```
+
+    I learned all of these commands by typing  `man grep` in my terminal.
