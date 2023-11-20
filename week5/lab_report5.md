@@ -250,7 +250,7 @@ And the four options I chose were:
 
   - example 1: `grep -C 2 "Goldemberg" technical/plos/journal.pbio.0020001.txt`
 
-  Here is the command line:
+    - Here is the command line:
 
   ```
   iris-fang@YL-MacBookPro docsearch % grep -C 2 "Goldemberg" technical/plos/journal.pbio.0020001.txt
@@ -589,7 +589,7 @@ And the four options I chose were:
     - Here is the command line:
 
     ```
-
+    iris-fang@YL-MacBookPro week5 % grep -v "," technical/government/About_LSC/CONFIG_STANDARDS.txt
     ```
 
     Output:
