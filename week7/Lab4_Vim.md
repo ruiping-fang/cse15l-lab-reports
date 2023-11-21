@@ -50,8 +50,9 @@ We run the bash scrips in `test.sh` again by using bash command to run the tests
 ## Step 9: Commit and push the resulting change to my Github account
 
 ![unit test output](./part9.png)
+![unit test output](./part9_push.png)
 
-- Keys pressed: `git status`, `git add ListExamples.java `,press `<enter>`. Then, type `git commit -m "fix bug"`
+- Keys pressed: `git status`, `git add ListExamples.java `,press `<enter>`. Then, type `git commit -m "fix bug"`, last, press `git push`
 
   First, we need to check the status before we do anything by pressing `git status`,which tells us what we modified in red color.
   We run the `git add `command on the terminal to stage a file we just edited to be part of the next commit. Then, we run g`it commit` to create a commit locally for all added/staged files. After that, we run `git push` to push all new commits to the remote Github account.
