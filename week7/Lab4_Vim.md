@@ -29,15 +29,14 @@ First, we need to change the working directory to `/lab7` directory, and then ru
 ![unit test output](./part7_vim.png)
 
 - Keys pressed: Type command `vim ListExamples.java` and press `<enter>.`
-  In this step, I use `vim` so that I can make editions of the content in the `ListExamples.java` file. After running that command, it shows us the content inside ListExamples.java in normal mode below:
+  In this step, I use `vim` so that I can make editions of the content in the `ListExamples.java` file. After running that command, it shows us the content inside ListExamples.java below:
 
 ![unit test output](./part7_code.png)
-
-- Keys pressed: first move my cursor below, then press `i`, `<enter>`, then press `delete`. then press `1` for insert 1 after deletes the the wrong index2 , type `<esc>`, press `:wq`
-
 ![unit test output](./cursor.png)
 
-Since we already know that the error in the code is just that `index1` is used instead of `index2` in the final loop in merge. By moving my cursor to the place where cause the error,so we don't need to move our cursor but press `delete` , in this case we can then press `i` and `<enter> ` for insertion. press `1` for insert 1 after deletes the the wrong index`2`.
+- Keys pressed: first I click my cursor at line8 after `index1` in the screenshot above , then press `i`, `<enter>`, then press `delete`. then press number `1` for insert 1 after deletes the the wrong number in `index2`, which is 2 . Then type `<esc>`, press `:wq` to save my change.
+
+  Since we already know that the error in the code is just that `index1` is used instead of `index2` in the final loop in merge. By clicking my cursor at line8 to the place where cause the error,so we don't need to move our cursor, in this case we can then press `i`, then press `delete` , and `<enter> ` for insertion. press `1` for insert 1 after deletes the the wrong index`2`.
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 
