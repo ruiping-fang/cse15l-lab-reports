@@ -4,7 +4,7 @@
 
 ### 1. Symptom and a description of a guess at the bug/some sense of what the failure-inducing input is.
 
-Hi the first screenshot is my ListExamples where `merge` function takes two sorted list of strings (so "a" appears before "b" and so on), and return a new list that has all the strings in both list in sorted order.
+Hi the first screenshot is my ListExamples where `merge` method takes two sorted list of strings (so "a" appears before "b" and so on), and return a new list that has all the strings in both list in sorted order.
 
 The second screenshot is the tesh I run for my merge functin I am not sure where it went wrong, it didn't pass the my second tesh file of test.sh
 
@@ -61,6 +61,14 @@ Based on your fail output, I suggests you make a small change of `testMerge2`, y
 ### 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 
 ![unit test output](./terminal_output.png)
+
+The bug is `merge` method can't merge the repeated string.
+The `l1` have ("a", "b", "c");
+The `l2` have ("c", "d", "e");
+
+Expected ("a", "b", "c" "c", "d", "e")
+
+but was ("a", "b", "c", "d", "e")
 
 ### 4
 
@@ -147,13 +155,13 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
   ```
 
-  we run `bash test.sh` again, the bug fixed:
+  we run `bash test.sh` again, it shows the bug has been99 fixed:
 
   ![fixed_bug](./fixed_bug.png)
 
-Part 2 – Reflection
+## Part 2 – Reflection
 
-Things I didn't know before is `vim` and `vim ` modes
+Things I didn't know before are `vim`, and `vim ` modes.
 It's also very cool to learn the basic navigation of `vim`, like `h` `j` `k` `l`
 
 `$` is to move to the end of the line
