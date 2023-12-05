@@ -6,7 +6,7 @@
 
 Hi the first screenshot is my ListExamples where `merge` method takes two sorted list of strings (so "a" appears before "b" and so on), and return a new list that has all the strings in both list in sorted order.
 
-The second screenshot is the tesh I run for my merge functin I am not sure where it went wrong, it didn't pass the my second tesh file of test.sh
+The symptom is shown on the second screenshot, it suggest that I didn't pass the my second tesh file of test.sh. I guess the bug might be in `merge` method, in the body of `while` loop.The bug might be the `merge` method can't merge the repeated string. But I am not sure if my guess is right, and need help on how to set up the test function
 
 The code block are the two tests method
 
@@ -115,7 +115,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ```
 
 - 4.3 The full command line (or lines) you ran to trigger the bug
-  `Bash tesh.sh`
+  `bash tesh.sh`
 
 - 4.4 A description of what to edit to fix the bug
 
@@ -162,10 +162,6 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ## Part 2 – Reflection
 
 Things I didn't know before are `vim`, and `vim ` modes.
-It's also very cool to learn the basic navigation of `vim`, like `h` `j` `k` `l`
+It's also very cool to learn the basic navigation of `vim`, like `h` `j` `k` `l` Move left, down, up, and right, respectively. `$` is to move to the end of the line. `G` is the move to the end of the file.
 
-`$` is to move to the end of the line
-
-`G` is the move to the end of the file
-
-Another thing I have learned from the lab is how debug from the the output of the JUnit test, also learned how to write the test function by meself.
+Another thing I have learned from the lab is how to debug from the the output of the JUnit test, also learned how to write the test function by meself. The lab that ask us to write the grader script to grade student's assignment is also very interesting!
